@@ -1,0 +1,363 @@
+body {
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+}
+
+
+p {
+    font-size: 20px;
+}
+
+li {
+    list-style: none;
+    margin-right: 25px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lista {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.titular {
+    text-align: center;
+    margin-top: 200px;
+}
+
+h1 {
+    font-size: 60px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+a {
+    font-size: 14px;
+    background: #5cb8ff;
+    padding: 20px 30px 20px 30px;
+    color: white;
+}
+
+header {
+    background: url(fondo.jpg);
+    height: 100vh;
+    background-size: cover;
+}
+
+.contenedor {
+    max-width: 1280px;
+    width: 90%;
+    margin: auto;
+    color: white;
+}
+
+/* ARRANCA SECCION SOBRE MI */
+
+#sobremi {
+    padding-top: 500px;
+}
+
+h3 {
+    text-align: center;
+    font-size: 55px;
+    font-weight: normal;
+}
+
+
+.contenedor-sobremi {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contenedor-parrafo-y-boton {
+    width: 42%;
+}
+
+.contenedor-parrafo-y-boton p {
+    font-size: 18px;
+}
+
+.parrafo-final {
+    margin-bottom: 30px;
+}
+
+/* ARRANCA SECCION SERVICIOS */
+
+#servicios {
+    padding-top: 500px;
+}
+
+.contenedor-servicios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.servicio {
+    width: 25%;
+    padding: 38px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.servicio h4 {
+    font-size: 30px;
+    margin: 0;
+}
+
+.servicio img {
+    float: right;
+}
+
+.servicio p {
+    height: 150px;
+}
+
+/* SERVICIOS */
+
+.tejido {
+    background: #051957;
+    color: white;
+}
+
+.proceso {
+    background: #B9C4E5;
+}
+
+.bioinformatica {
+    background: #051957;
+    color: white;
+}
+
+.micropropagacion {
+    background: #B9C4E5;
+
+}
+
+.biorremediacion {
+    background: #051957;
+    color: white;
+}
+
+.genetica {
+    background: #B9C4E5;
+
+}
+
+/* SECCION CARRUSEL */
+
+#carousel {
+    padding-top: 500px;
+}
+
+.contenedor-carousel {
+    align-items: center;
+}
+
+/* SECCION ¿PORQUE TRABAJAR CONMIGO? */
+
+#trabajar {
+    padding-top: 500px;
+}
+
+.contenedor-porque {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contenedor-porque h4 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.contenedor-porque p {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.porque-singular {
+    width: 15%;
+
+}
+
+/* SECCION BLOG */
+
+#blog {
+    background: #F9FAFC;
+    padding-top: 500px;
+    padding-bottom: 200px;
+}
+
+.contenedor-publicaciones {
+    display: flex;
+    justify-content: space-around;
+}
+
+.publicacion {
+    width: 20%;
+    box-shadow: 1px 1px 14px #ccc;
+    padding-bottom: 20px;
+}
+
+#blog img {
+    width: 100%
+}
+
+#blog h4 {
+    font-size: 23px;
+    margin: 0;
+    padding: 20px;
+}
+
+#blog p {
+    color: #5A6169;
+    line-height: 24px;
+    font-size: 16px;
+    padding: 10px 20px 20px 20px;
+    margin: 0;
+}
+
+#blog a {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+/* SECCION ¿QUE ESPERAS? */
+
+#proyecto {
+    background: linear-gradient(rgba(13,35,88,.94),rgba(21,59,179,.9));
+    color: white;
+    text-align: center;
+    padding: 50px 0 50px 0;
+    padding-bottom: 200px;
+}
+
+#proyecto h3 {
+    font-size: 23px;
+    margin-bottom: 40px;
+}
+
+#proyecto a {
+    padding: 20px 45px 20px 45px;
+    transition: 1s;
+}
+
+
+#proyecto a:hover {
+    color: black;
+    transition: 1s;
+    transform: scale(1.2);
+    display: inline-block;
+}
+
+/* SECCION WHATSAPP */
+
+#whatsapp a {
+    background: none;
+    position: fixed;
+    top: 85%;
+    right: 1%;
+}
+
+
+/* RESPONSIVE (CUANDO MAX. ANCHO 480PX) */
+
+.menu-icon {
+    display: none;
+}
+
+
+@media (max-width: 800px) {
+    nav {
+        position: absolute;
+        top: 70px;
+        left: 0px;
+        background: #5cb8ff;
+        width: 100%;
+        display: none;
+    }
+
+    nav .lista {
+        flex-direction: column;
+        display: flex
+    }
+
+
+    .menu-icon {
+        display: block;
+        width: 25px;
+    }
+
+    .titular {
+        margin-top: 54px;
+    }
+
+    h1 {
+        font-size: 49px;
+    }
+
+    h2 {
+        font-size: 19px;
+    }
+
+    .contenedor-sobremi {
+        flex-direction: column;
+    }
+
+    .contenedor-parrafo-y-boton {
+        width: 82%;
+    }
+
+    .contenedor-servicios {
+        flex-direction: column;
+    }
+
+    .servicio {
+        width: 72%;
+    }
+
+    .contenedor-porque {
+        flex-direction: column;
+    }
+
+    .porque-singular {
+        width: 95%;
+    }
+
+    .contenedor-publicaciones {
+        flex-direction: column;
+    }
+
+    .publicacion {
+        width: 85%;
+        margin: auto;
+        padding-top: 10px;
+    }
+
+    header {
+        height: 56vh;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 900px) {
+    header {
+        height: 53vh;
+    }
+}
